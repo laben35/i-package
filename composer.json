@@ -1,0 +1,26 @@
+{
+	"name" : "administrateur/formation-php",
+	"authors" : [{
+			"name" : "laben"
+		}
+	],
+	"require" : {
+		"psr/log" : "1.0.2",
+		"phpunit/phpunit" : "6.1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Formation\\Poo\\" : "cours/poo/",
+			"Tutorial\\View\\" : "cours/view/",
+			"Lib\\MVC\\" : "library/mvc/",
+			"FindCode\\Test\\" : "test/",
+			"FindCode\\Controller\\" : "app/controller/",
+			"FindCode\\Model\\" : "app/model/",
+			"FindCode\\View\\" : "app/view/",
+			"FindCode\\Api\\Controller\\" : "api/controller/",
+			"FindCode\\Api\\Model\\" : "api/model/",
+			"FindCode\\Api\\View\\" : "api/view/",
+			"Lib\\Manager\\" : "library/manager/"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+RewriteEngine on
+
+RewriteRule ^([0-9a-zA-Z-/_]{3,100})$ index.php?package=$1 [L]
