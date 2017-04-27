@@ -98,10 +98,11 @@ PackageModelInterface
         $url = "https://packagist.org/packages/"
              . $this->package
              . ".json";
-             $obj = $this->consume($url, true);
-             if($obj === true)
+             $obj = $this->consume($url);
+             if($obj)
              {
                  $this->distribuable = true;
+          
         foreach ($obj->package->versions as $key => $value) {
                  $this->version[] = $key;
                  }
